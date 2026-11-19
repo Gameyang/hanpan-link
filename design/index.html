@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="한판링크의 날짜별 개발 이야기와 작동하는 시안을 살펴보세요.">
+    <title>개발 페이지 · 한판링크</title>
+    <script type="module" crossorigin src="../assets/index-CAD2HdFJ.js"></script>
+    <link rel="stylesheet" crossorigin href="../assets/site-CShfcCi4.css">
+  </head>
+  <body>
+    <a class="skip-link" href="#main">본문 바로가기</a>
+    <header class="masthead">
+      <div class="masthead-inner">
+        <a class="brand" href="../"><span class="brand-mark" aria-hidden="true"></span>한판링크</a>
+        <nav aria-label="주 메뉴"><a href="./" aria-current="page">개발 페이지</a></nav>
+      </div>
+    </header>
+    <div class="journal-shell">
+      <aside class="journal-sidebar">
+        <nav aria-labelledby="archive-title">
+          <h2 id="archive-title">개발 기록</h2>
+          <ul id="archive"></ul>
+        </nav>
+      </aside>
+      <main id="main" class="journal-main">
+        <article id="entry" aria-busy="true">
+          <time id="entry-date" class="eyebrow" hidden></time>
+          <div id="entry-body" class="prose"><p role="status">개발 기록을 불러오는 중입니다.</p></div>
+        </article>
+        <noscript>개발 기록과 체험을 열려면 JavaScript를 켜 주세요.</noscript>
+      </main>
+      <aside class="contents-sidebar" id="contents-sidebar" hidden>
+        <nav aria-labelledby="contents-title">
+          <h2 id="contents-title">이 글의 목차</h2>
+          <ul id="contents"></ul>
+        </nav>
+      </aside>
+    </div>
+    <template id="timer-template">
+      <section class="timer" aria-label="공용 타이머 체험">
+        <div class="timer-header">
+          <span>공용 타이머</span>
+          <span role="status" data-timer-status>시작 대기</span>
+        </div>
+        <output class="timer-time" role="timer" aria-label="남은 시간" data-timer-time>05:00</output>
+        <div class="timer-controls">
+          <button type="button" class="button primary" data-timer-toggle>시작</button>
+          <button type="button" class="button secondary" data-timer-reset>초기화</button>
+        </div>
+      </section>
+    </template>
+  </body>
+</html>
