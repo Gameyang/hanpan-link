@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="referrer" content="no-referrer">
+    <title>공용 타이머 · 한판링크</title>
+    <script type="module" crossorigin src="../assets/index-HPtM_KKG.js"></script>
+    <link rel="modulepreload" crossorigin href="../assets/timer-display-q999qslq.js">
+    <link rel="stylesheet" crossorigin href="../assets/site-DiZa-692.css">
+  </head>
+  <body>
+    <main class="room-main">
+      <h1>한판링크 공용 타이머</h1>
+      <button id="create" class="button primary" hidden>방 만들기</button>
+      <p id="connection" role="status">연결 확인 중</p>
+      <section id="room" class="timer" aria-label="공용 타이머" hidden>
+        <div class="timer-header"><span id="role"></span><span id="phase" role="status"></span></div>
+        <time id="remaining" class="timer-time" aria-label="남은 시간">05:00</time>
+        <div id="controls" class="timer-controls" hidden>
+          <button id="toggle" class="button primary" disabled>시작</button>
+          <button id="reset" class="button secondary" disabled>초기화</button>
+        </div>
+      </section>
+      <section id="invite" class="room-invite" hidden>
+        <h2>휴대폰 입장</h2>
+        <p>같은 Wi-Fi에 연결된 휴대폰으로 QR을 스캔하세요.</p>
+        <img id="qr" width="240" height="240" alt="방 입장 QR 코드">
+        <a id="join-link"></a>
+      </section>
+    </main>
+  </body>
+</html>
